@@ -8,7 +8,10 @@ class WeightedQuickUnionUF {
     this.sz = Array(N).fill(1);
   }
   root(i) {
-    while (i !== this.id[i]) i = this.id[i];
+    while (i !== this.id[i]) {
+      this.id[i] = this.id[this.id[i]];
+      i = this.id[i];
+    }
     return i;
   }
   connected(p, q) {
