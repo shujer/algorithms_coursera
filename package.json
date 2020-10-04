@@ -1,0 +1,15 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "description": "Princeton University 丨 Algorithms Part 1 & Part 2 (JavaScript Version)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
+}
