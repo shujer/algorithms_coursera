@@ -1,11 +1,11 @@
 class WeightedQuickUnionUF {
   id = [];
   sz = [];
-  constructor(N = 0) {
-    this.id = Array(N)
+  constructor(n = 0) {
+    this.id = Array(n)
       .fill(0)
       .map((_, index) => index);
-    this.sz = Array(N).fill(1);
+    this.sz = Array(n).fill(1);
   }
   root(i) {
     while (i !== this.id[i]) {
